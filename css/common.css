@@ -73,6 +73,38 @@ header {
     text-decoration: none;
 }
 
+.notice{
+    padding: 5px 10px;
+}
+
+.notice h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 3px solid #7e442f;
+}
+
+.table_wrapper {
+    /* ボックスに入りきらない内容は一般的にはスクロールで表示 */
+    overflow: auto;
+    height: 180px;
+}
+
+.table {
+    font-size: 15px;
+}
+
+.table th {
+    font-weight: top;
+    /* 垂直方向の配置を指定 */
+    vertical-align: top;
+}
+
+/* tdの1番目の要素にCSSを適用する */
+.table td:nth-of-type(1) {
+    vertical-align: top;
+}
+
 main,
 footer {
     width: 800px;
