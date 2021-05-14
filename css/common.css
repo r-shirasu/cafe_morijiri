@@ -147,10 +147,20 @@ header {
     padding: 5px;
 }
 
+.eventlist li a {
+    color: #2a120a;
+}
+
+.eventlist li a:hover {
+    color: #ffffffff;
+    background-color: #492412;
+}
+
 最後から数えて1番目の要素以外にCSSを適用
 .eventlist li:not (:nth-last-of-type(1)) {
     margin-bottom: 5px;
 }
+
 
 .eventlist figure {
     text-align: center;
