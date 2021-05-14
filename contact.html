@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Caffe Morijiri</title>
+</head>
+<body>
+<main>
+    <!-- ヘッダー -->
+    <header>
+        <h1>
+            <img class="header_logoImage" src="img/header/top_logo.png" alt="Caffe Morijiri">
+        </h1>
+        <div class="header_ImageWrapper">
+            <img src="img/header/main.png" alt="Caffe Image">
+            <nav>
+                <ul class="header_menuList">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <!-- 本文 -->
+        <article class="content border">
+            <!-- ここにコンテンツを入れていく-->
+            <section class="contact cream">
+                <h2 class="contact_heading">Contact</h2>
+                <form action="./contact.html" method="post">
+                    <!-- フォーム項目リスト -->
+                    <dl class="form_content">
+                        <dt><label for="type">お問い合わせ種別</label></dt>
+                        <dd>
+                            <select id="type" name="type">
+                                <option value="order">ご予約</option>
+                                <option value="event">イベント申し込み</option>
+                                <option value="other">その他お問い合わせ</option>
+                            </select>
+                        </dd>
+                        <dt><label for="name">お名前</label></dt>
+                        <dd>
+                            <input id="name" name="name" type="text">
+                        </dd>
+                        <dt><label for="addr">ご住所</label></dt>
+                        <dd>
+                            <input id="addr" name="addr" type="text">
+                        </dd>
+                        <dt><label for="mail">メールアドレス</label></dt>
+                        <dd>
+                            <input id="mail" name="mail" type="text">
+                        </dd>
+                        <dt><label for="tel">お電話番号</label></dt>
+                        <dd>
+                            <input id="tel" name="tel" type="text">
+                        </dd>
+                        <dt><label for="message">お問い合わせ内容</label></dt>
+                        <dd>
+                            <textarea id="message" name="message" cols="45" rows="10"></textarea>
+                        </dd>
+                    </dl>
+                    <!-- 送信ボタン -->
+                    <button class="form_submitButton" type="submit">送信</button>
+                </form>
+            </section>
+        </article>
+        <!-- サイドバー -->
+        <aside class="sidebar border">
+            <!-- イベント一覧 -->
+            <ul class="eventList">
+                <li class="cream">
+                    <figure>
+                        <img src="img/event/event_01.png" alt="だんご">
+                        <figcaption class="textLink"><a href="./event.html#wagashi">和菓子フェア開催中</a></figcaption>
+                    </figure>
+                </li>
+                <li class="cream">
+                    <figure>
+                        <img src="img/event/event_02.png" alt="お菓子作り教室">
+                        <figcaption class="textLink"><a href="./event.html#school">お菓子作り教室開催中</a></figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <!-- SNS等リンク -->
+            <ul class="social">
+                <li>
+                    <a href="">
+                        <img src="img/icon/twitter.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/icon/facebook.png" alt="twitter">
+                    </a>
+                </li>
+            </ul>
+            <!-- Caffe設備アイコン -->
+            <ul class="icons">
+                <li>
+                    <img src="img/icon/wifi.png" alt="wifi">
+                </li>
+                <li>
+                    <img src="img/icon/power.png" alt="電源">
+                </li>
+                <li>
+                    <img src="img/icon/pc.png" alt="PC">
+                </li>
+                <li>
+                    <img src="img/icon/print.png" alt="印刷">
+                </li>
+            </ul>
+        </aside>
+    </div>
+</main>
+<!-- フッター -->
+<footer>
+    <small>Copyright © 2020-2021 AsiaQuest All Rights Reserved.</small>
+</footer>
+</body>
+</html>
