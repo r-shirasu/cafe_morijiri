@@ -23,6 +23,55 @@ header {
     margin-bottom: 10px;
 }
 
+/* ヘッダー */
+.header_logoImage {
+    width: 50%;
+}
+
+.header_ImageWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.header_ImageWrapper nav {
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+}
+
+.header_ImageWrapper img {
+    width: 100%;
+}
+
+.header_menuList {
+    /* 横並びにする */
+    display: flex;
+    /* 横並びいっぱいにする */
+    justify-content: space-around;
+}
+
+.header_menuList li {
+    width: 150px;
+    text-align: center;
+}
+
+.header_menuList li:hover {
+    /* 二つ以上の色の間で、連続的な直線の変化から構成される画像 */
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.header_menuList a {
+    display: block;
+    width: 100%;
+    /* フォントの種類 */
+    font-family: serif;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px #000;
+    /* 下線の表示（この場合は表示なし） */
+    text-decoration: none;
+}
+
 main,
 footer {
     width: 800px;
