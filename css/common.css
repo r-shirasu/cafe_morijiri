@@ -73,6 +73,27 @@ header {
     text-decoration: none;
 }
 
+.wrapper {
+ /* コンテンツとサイドバー横並び */
+ display: flex;
+}
+
+.content {
+    /* 加減乗除の計算。この場合100%のうち250px分 */
+    width: calc(100% -250px);
+    margin-right: 10px;
+    padding: 5px;
+    border: 3px dotted #7e442f;
+    background-color: #fceddb;
+}
+
+.sidebar{
+    width: 240px;
+    padding: 5px;
+    border: 3px dotted #7e442f;
+    background-color: #fceddb;
+}
+
 .notice{
     padding: 5px 10px;
 }
@@ -116,6 +137,23 @@ header {
     /* 幅いっぱい（100%）から、50pxの固定幅を引いた数値を指定したものを3等分 */
     width: calc((100% - 10px) / 3);
     padding: 5px;  
+}
+
+.eventlist {
+    margin: 0 0 10px 0;
+}
+
+.eventlist li {
+    padding: 5px;
+}
+
+最後から数えて1番目の要素以外にCSSを適用
+.eventlist li:not (:nth-last-of-type(1)) {
+    margin-bottom: 5px;
+}
+
+.eventlist figure {
+    text-align: center;
 }
 
 main,
