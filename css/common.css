@@ -152,11 +152,11 @@ header {
 }
 
 .eventlist li a:hover {
-    color: #ffffffff;
+    color: #ffffff;
     background-color: #492412;
 }
 
-最後から数えて1番目の要素以外にCSSを適用
+/* 最後から数えて1番目の要素以外にCSSを適用 */
 .eventlist li:not (:nth-last-of-type(1)) {
     margin-bottom: 5px;
 }
