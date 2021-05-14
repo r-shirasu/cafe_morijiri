@@ -179,3 +179,18 @@ ul {
     list-style: none;
     padding-left: 0;
 }
+
+.social {
+    margin: 0;
+}
+
+.social li {
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    /* アイテムの間にスペースを均等に割り付け */
+    justify-content: space-between;
+    margin: 0;
+}
