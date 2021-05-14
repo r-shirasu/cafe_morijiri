@@ -25,6 +25,7 @@ header {
 
 /* ヘッダー */
 .header_logoImage {
+    /* 画像小さくしている */
     width: 50%;
 }
 
