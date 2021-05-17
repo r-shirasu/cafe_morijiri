@@ -80,7 +80,7 @@ header {
 
 .content {
     /* 加減乗除の計算。この場合100%のうち250px分 */
-    width: calc(100% -250px); 
+    width: 100%; 
     margin-right: 10px;
     padding: 5px;
     border: 3px dotted #7e442f;
@@ -211,4 +211,8 @@ ul {
     /* アイテムの間にスペースを均等に割り付け */
     justify-content: space-between;
     margin: 0;
+}
+
+.content-maintenance {
+    width: 
 }
